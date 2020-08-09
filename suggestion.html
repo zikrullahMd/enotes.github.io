@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Suggestions</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        <meta http-equiv="Refresh" content="15; url=web.html" />
+        <style>
+            body{
+                background-color: silver;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            *{
+                font-family: 'Merriweather', serif;
+            }
+            .doxter{
+                height: 50px;
+                align-content: center;
+                position: relative;
+                left: 50px;
+            }
+            h2{
+                text-align: center;
+                font-size: 50px;
+            }
+            img{
+                height: 150px;
+                width: 150px;
+                position: relative;
+                top: 60px;
+                left: 650px;
+            }
+            button{
+                
+                position: relative;
+                top: 80;
+                left: 680;
+                text-decoration: none;
+                background-color: transparent;
+                border: none;
+                color: black;
+            }
+            button:hover{
+                color: red;
+                font-weight: bolder;
+                transform: scale(1.8);
+            }
+            a{
+                text-decoration: none;
+                font-family: 'Merriweather', serif;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html">HOME</a>
+        <h2>Help Us Improve</h2>
+        <img src="mail.png" alt="MAIL" class="arr">
+        <div class="doxter"></div>
+        <button>
+            <a href="mailto:mohmmedzikrullah159@gmail.com">Mail Me</a>
+        </button>
+        <script>
+        $(document).ready(function(){
+         $("form").on('submit',function(e){
+        alert("Thankyou For Your Feedback");
+        return false;
+
+         });
+        });
+        </script>
+    </body>
+</html>
